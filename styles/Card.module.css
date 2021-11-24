@@ -7,6 +7,7 @@
     padding: 1rem;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 1.4rem 1fr;
 }
 
 .card-container p {
@@ -15,20 +16,54 @@
     grid-column-end: 2;
 }
 
+.card-container h6 {
+    display: inline;
+    font-size: 1rem;
+}
+
+.lessonNum {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    align-self: start;
+}
+
+.lessonTitle {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    align-self: center;
+}
+
+.lessonTitleSpan {
+    font-weight: 400;
+}
+
+.lessonDesc {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-self: start;
+}
+
+.lessonDescription {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    align-self: start;
+    margin-top: 2rem;
+}
+
 .card-container span {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: 3;
-}
-
-.card-image {
-    grid-row-start: 1;
-    grid-row-end: 3;
 }
 
 .card-container img {
-    width: 16rem;
-    height: 9rem;
     border: 1px solid black;
 }

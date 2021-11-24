@@ -9,16 +9,39 @@ function Card(props: CardProps) {
                 styles["card-container"]
             }
         >
-            <p>
+            <h6
+                className={
+                    styles.lessonNum
+                }
+            >
                 Lesson {props.lessonNum}
-            </p>
-            <p>
+            </h6>
+            <h6
+                className={
+                    styles.lessonTitle
+                }
+            >
                 Title:{" "}
-                {props.lessonTitle}
-            </p>
-            <p>
-                Description: <br />
-                <br />
+                <span
+                    className={
+                        styles.lessonTitleSpan
+                    }
+                >
+                    {props.lessonTitle}
+                </span>
+            </h6>
+            <h6
+                className={
+                    styles.lessonDesc
+                }
+            >
+                Description:
+            </h6>
+            <p
+                className={
+                    styles.lessonDescription
+                }
+            >
                 {props.lessonDesc}
             </p>
             <Image
@@ -29,6 +52,7 @@ function Card(props: CardProps) {
                 alt="Rocket League"
                 width={256}
                 height={144}
+                layout="responsive"
             />
         </div>
     );
